@@ -93,16 +93,16 @@
     var appendNumber = 4;
     var prependNumber = 1;
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
       },
     });
     document.querySelector('.prepend-2-slides').addEventListener('click', function (e) {
